@@ -3,7 +3,7 @@ package data.structures.array;
 /**
  * 类描述：对数组进行封装实现数组的相关功能
  * @author zhangzhl
- * @param <E>
+ * @param <E> 泛型
  */
 @SuppressWarnings("unchecked")
 public class Array<E>{
