@@ -144,4 +144,13 @@ public class Array<E>{
             newData[i] = data[i];
         data = newData;
     }
+    
+    public E getLast() {
+    	return get(size - 1);
+    }
+    
+    public E getFirst() {
+    	return get(0);
+    }
+    
 }
