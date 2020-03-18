@@ -3,7 +3,7 @@ package data.structures.node;
 @SuppressWarnings("unchecked")
 public class LinkedList<E> {
 
-    private Node<?> dummyHead;
+    private Node<E> dummyHead;
     private int size;
 
     public LinkedList(){
