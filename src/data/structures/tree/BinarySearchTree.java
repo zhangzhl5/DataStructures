@@ -2,7 +2,8 @@ package data.structures.tree;
 
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Stack;
+
+import data.structures.stack.ArrayStack;
 
 /**
  * 类描述： 二分搜索树
@@ -72,7 +73,9 @@ public class BinarySearchTree<E extends Comparable<E>> {
 		
 		return contains(root,e);
 	}
-	
+	 public boolean isEmpty(){
+	        return size == 0;
+	 }
 	/**
 	 * 方法描述：以root为根判断是否包含某元素e，递归算法
 	 * @param node
@@ -154,7 +157,7 @@ public class BinarySearchTree<E extends Comparable<E>> {
 	
 	// 二分搜索树的非递归前序遍历
     public void preOrderNR(){
-        Stack<Node> stack = new Stack<>();
+    	ArrayStack<Node> stack = new ArrayStack<>();
         stack.push(root);
         while(!stack.isEmpty()){
             Node cur = stack.pop();
