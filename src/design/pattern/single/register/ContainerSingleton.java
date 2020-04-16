@@ -5,7 +5,11 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 
-//Spring中的做法，就是用这种注册式单例
+/**
+ * Spring中的做法，就是用这种注册式单例
+ * @author zhangzhl
+ *
+ */
 public class ContainerSingleton {
     private ContainerSingleton(){}
     private static Map<String,Object> ioc = new ConcurrentHashMap<String,Object>();
