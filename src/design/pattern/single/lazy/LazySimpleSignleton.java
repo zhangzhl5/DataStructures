@@ -21,5 +21,5 @@ public class LazySimpleSignleton {
 		} 
 		return lazySimpleSignleton;
 	}
-
+	
 }

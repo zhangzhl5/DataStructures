@@ -8,7 +8,7 @@ package design.pattern.single.lazy;
 public class ExectorThread implements Runnable{
     @Override
     public void run() {
-    	LazySimpleSignleton singleton = LazySimpleSignleton.getInstance();
+    	LazyDoubleCheckSignleton singleton = LazyDoubleCheckSignleton.getInstance();
         System.out.println(Thread.currentThread().getName() + ":" + singleton);
     }
 }
