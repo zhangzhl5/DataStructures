@@ -14,7 +14,8 @@ public class LazySimpleSignleton {
 	
 	private static LazySimpleSignleton lazySimpleSignleton;
 	
-	public static LazySimpleSignleton getInstance() {
+	//synchronized 加锁保证同一时间只能有一个线程进入该方法
+	public synchronized static LazySimpleSignleton getInstance() {
 		if(lazySimpleSignleton == null ) {
 			lazySimpleSignleton = new LazySimpleSignleton();
 		} 
